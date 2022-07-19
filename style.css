@@ -1,0 +1,103 @@
+/*--------------------- RESET ---------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Serve para a margin e o padding não comprometerem na largura dos elementos*/
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle, #cbb5cb, #7d7b8b, #4c4a56, #271e2d, #04000d);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------------- CONTEÚDO ---------------------*/
+.container {
+    width: 40%;
+    padding: 30px 40px;
+    border: 2px solid white;
+    min-width: 500px;
+}
+/*--------------------- NOVA TAREFA ---------------------*/
+
+.nova-tarefa {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.nova-tarefa-input {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 1rem;
+    flex: 4;
+}
+
+.nova-tarefa-input:focus {
+    outline: none;
+    border-color: #14c900;
+}
+
+.nova-tarefa-botao {
+    height: 100%;
+    width: 15%;
+    margin-left: 12px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: #14c900;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nova-tarefa-botao:hover {
+    background-color: #15d100ee;
+    transition: 0.3s;
+}
+
+/*--------------------- TAREFA ADICIONADA ---------------------*/
+.tarefa-adicionada {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/*--------------------- UTILITIES ---------------------*/
+
+.erro {
+    border: 2px solid red;
+}
+
+.erro::placeholder {
+    color: red;
+}
+
+
+/*--------------------- NOVO ITEM ---------------------*/
+.novo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 6px;
+    margin-bottom: 6px; */
+    margin: 6px 0px;
+}
+
+.novo-item i {
+    background-color: red;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+}
