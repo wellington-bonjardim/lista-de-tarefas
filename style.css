@@ -57,11 +57,12 @@ body {
     background-color: #14c900;
     color: #fff;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .nova-tarefa-botao:hover {
     background-color: #15d100ee;
-    transition: 0.3s;
+    
 }
 
 /*--------------------- TAREFA ADICIONADA ---------------------*/
@@ -95,9 +96,41 @@ body {
     margin: 6px 0px;
 }
 
-.novo-item i {
-    background-color: red;
+.divBotoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-check {
+    background-color: green;
     color: white;
     padding: 12px;
     border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.fa-check:hover {
+    background-color: #15d100ee;
+}
+
+.fa-trash-can {
+    background-color: rgba(201, 0, 0, 0.89);
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fa-trash-can:hover {
+    background-color: red
+}
+
+/*--------------------- TAREFA FINALIZADA ---------------------*/
+.finalizada {
+    text-decoration: line-through 3px;
+    text-decoration-color: #14c900;
+    color: gray;
 }
