@@ -7,6 +7,7 @@ Neste projeto, o usuário é capaz de inserir novas tarefas, bem como marcar as 
 Todas as tarefas são salvas no LocalStorage.
 
 Ao desenvolver este projeto, foi possível abordar situações como:
+
 - Inclusão de fontes externas;
 - Utilização de Flexbox e estado hover;
 - Criação de inputs e botões dinâmicos;
