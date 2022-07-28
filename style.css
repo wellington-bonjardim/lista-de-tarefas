@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*Serve para a margin e o padding não comprometerem na largura dos elementos*/
+    box-sizing: border-box;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
@@ -10,8 +10,26 @@ body {
     background: radial-gradient(circle, #cbb5cb, #7d7b8b, #4c4a56, #271e2d, #04000d);
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@font-face {
+    font-family: 'American';
+    src: url(/fonts/American\ Signs.otf);
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.titulo h1 { 
+    font-family: 'American', sans-serif;
+    font-size: 5rem;
+    color: white;
 }
 
 /*--------------------- CONTEÚDO ---------------------*/
@@ -70,7 +88,7 @@ body {
     width: 100%;
     background-color: #fff;
     padding: 30px 20px;
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
@@ -91,9 +109,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-top: 6px;
-    margin-bottom: 6px; */
-    margin: 6px 0px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    max-width: 100%;
 }
 
 .divBotoes {
